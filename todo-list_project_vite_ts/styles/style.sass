@@ -1,0 +1,138 @@
+@import "fonts.sass"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Raleway', sans-serif
+  color: white
+  font-weight: 400
+  font-size: 18px
+
+body
+  display: flex
+  justify-content: center
+  margin: 47px 0
+
+.main
+  &__screen
+    width: 830px
+    min-height: 632px
+    background-color: #151515
+    border-radius: 20px
+    box-shadow: 0 0 20px 8px rgba(58, 58, 58, 0.5)
+
+  &__header
+    align-items: center
+    display: flex
+    justify-content: center
+    background-color: #0AB6AB
+    border-radius: 18px 18px 0 0
+
+  &__page-content
+    padding: 50px 24px
+
+.navigation-header
+  display: flex
+  margin: 43px 0
+  gap: 323px
+
+.arrow-icon, .menu-icon
+  cursor: pointer
+
+.title
+  color: black
+
+.list-input
+  display: flex
+  flex-direction: column
+  gap: 27px
+
+.date
+  display: flex
+  flex-direction: column
+
+.day
+  font-size: 20px
+  font-weight: 700
+
+.month-year
+  font-weight: 400
+  font-size: 14px
+
+.list-input
+
+  &__input
+    width: 80%
+    height: 34px
+    background-color: #3a3a3a
+    border-radius: 20px
+    border-color: transparent
+
+  &__button
+    width: 17%
+    border-radius: 20px
+    border-color: transparent
+    background-color: #3a3a3a
+    cursor: pointer
+
+  &__button:hover
+    background-color: #444444
+
+  &__form
+    justify-content: space-between
+    display: flex
+
+.todo-list
+  gap: 5px
+  display: flex
+  flex-direction: column
+
+  &__item
+    background-color: #282828
+    border-radius: 5px
+    padding: 10px 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+.todo-list__item.completed
+  color: #7a7777
+  text-decoration: line-through #7a7777
+
+.item-text
+  margin: 10px 20px
+  font-size: 16px
+  font-weight: 400
+  width: 30%
+
+  &__completed
+    color: #7a7777
+
+.completed
+  background-color: #151515
+  border: 1px solid #282828
+  text-decoration: line-through #f5f3f5
+
+.delete-button
+  height: 20px
+  font-size: 16px
+  font-weight: bold
+  text-decoration: none
+  background-color: #0AB6AB
+  border-radius: 20px
+  border-color: transparent
+  cursor: pointer
+  margin: 10px 20px
+
+.delete-text
+  padding: 10px
+  font-size: 10px
+
+
+
+
+
+
+

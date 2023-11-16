@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO list</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body onload="uploadItems()" onbeforeunload="loadInStorage()">
+
+<main class="main__screen">
+
+  <header class="main__header">
+    <div class="navigation-header">
+      <div class="back-icon">
+        <img src="./images/fluent_ios-arrow-24-filled.svg" alt="arrow-icon" class="arrow-icon">
+      </div>
+      <div class="todo-title">
+        <h2 class="title">Todo List</h2>
+      </div>
+      <div class="menu">
+        <img src="./images/bi_three-dots-vertical.svg" alt="menu" class="menu-icon">
+      </div>
+    </div>
+  </header>
+
+  <div class="main__page-content">
+    <div class="list-input">
+      <div class="date">
+        <span class="day" id="day">Today</span>
+        <span class="month-year" id="date">Some date</span>
+      </div>
+      <form action="" class="list-input__form">
+        <input type="text" class="list-input__input" placeholder="I need to..." id="input">
+        <button type="button" class="list-input__button" onclick="createItem()">Add</button>
+      </form>
+      <ul class="todo-list" id="todo-list" > </ul>
+    </div>
+  </div>
+</main>
+
+<script src="scripts/scriptTS.ts">
+</script>
+
+</body>
+</html>
